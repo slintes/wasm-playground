@@ -1,0 +1,14 @@
+[package]
+name = "hello"
+version = "0.1.0"
+authors = ["slintes"]
+edition = "2018"
+
+[lib]
+name = "hello_lib"
+path = "src/lib.rs"
+crate-type =["cdylib"]
+
+[dependencies]
+wasmedge-bindgen = "0.4.1"
+wasmedge-bindgen-macro = "0.4.1"
